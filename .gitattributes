@@ -1,2 +1,9 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Ignore shaders and third-party files in GitHub's language stats
+*.shader linguist-detectable=false
+*.cginc linguist-detectable=false
+*.mat linguist-detectable=false
+*.anim linguist-detectable=false
+*.asset linguist-detectable=false
+*.meta linguist-detectable=false
