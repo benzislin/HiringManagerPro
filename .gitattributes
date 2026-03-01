@@ -1,9 +1,13 @@
-# Auto detect text files and perform LF normalization
-* text=auto
 # Ignore shaders and third-party files in GitHub's language stats
-*.shader linguist-detectable=false
-*.cginc linguist-detectable=false
-*.mat linguist-detectable=false
-*.anim linguist-detectable=false
-*.asset linguist-detectable=false
-*.meta linguist-detectable=false
+*.shader linguist-vendored
+*.cginc linguist-vendored
+*.hlsl linguist-vendored
+
+# Ignore iOS plugin files that GitHub mistakes for Wolfram Language
+*.m linguist-vendored
+
+# Ignore standard Unity generated data
+*.mat linguist-vendored
+*.anim linguist-vendored
+*.asset linguist-vendored
+*.meta linguist-vendored
